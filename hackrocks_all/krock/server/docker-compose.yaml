@@ -1,0 +1,10 @@
+version: '3'
+services:
+  krock:
+    image: krock
+    build: .
+    restart: always
+    environment:
+      - TERM=xterm
+    ports:
+      - "7780:7780"

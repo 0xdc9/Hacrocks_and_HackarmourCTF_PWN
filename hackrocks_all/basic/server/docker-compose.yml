@@ -1,0 +1,10 @@
+version: "3"
+services:
+  basic:
+    image: basic
+    build: .
+    restart: always
+    environment:
+      - TERM=xterm
+    ports:
+      - "48453:48453"

@@ -1,0 +1,14 @@
+service eyesclosed
+{
+        disable = no
+        socket_type = stream
+        protocol = tcp
+        wait = no
+        user = eyesclosed
+        type = UNLISTED
+        port = 7772
+        bind = 0.0.0.0
+        server = /home/eyesclosed/run
+        per_source = 10
+        rlimit_cpu = 20
+}

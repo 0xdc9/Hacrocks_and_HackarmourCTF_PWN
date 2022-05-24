@@ -1,0 +1,10 @@
+version: '3'
+services:
+  eyesclosed:
+    image: eyesclosed
+    build: .
+    restart: always
+    environment:
+      - TERM=xterm
+    ports:
+      - "7772:7772"

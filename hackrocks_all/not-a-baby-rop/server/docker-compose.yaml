@@ -1,0 +1,10 @@
+version: '3'
+services:
+  notababyrop:
+    image: notababyrop
+    build: .
+    restart: always
+    environment:
+      - TERM=xterm
+    ports:
+      - "7770:7770"

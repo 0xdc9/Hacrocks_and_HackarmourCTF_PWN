@@ -1,0 +1,1 @@
+cd to this directory and run 'docker-compose up --build -d'
